@@ -1,0 +1,621 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script>
+
+<style>
+body{
+background-image: url('') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+background-color:#424242;
+}
+
+::-webkit-scrollbar {width: 4px; height: 4px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #2E2E2E;}
+
+#titleline {
+position:absolute;
+background-color:#6b7f87;
+width:30.5%;
+height:1%;
+top:6.5%;
+left:34.75%;
+}
+
+#titlebox {
+position:absolute;
+background-color:#6b7f87;
+width:18%;
+height:6%;
+top:4%;
+left:41%;
+}
+
+#title {
+position:absolute;
+background-color:#575656;
+width:17%;
+height:4%;
+top:5%;
+left:41.5%;
+text-align:center;
+font-size:2.5vh;
+letter-spacing:3px;
+font-family: 'Amatic SC', cursive;
+color:#BDCED5;
+line-height:1.5;
+}
+
+#circle1 {
+position:absolute;
+background-color:#6b7f87;
+border-radius:100%;
+width:7%;
+height:14%;
+left:22%;
+top:14%;
+}
+
+#circle1pic {
+position:absolute;
+background-color:#424242;
+border-radius:100%;
+width:6%;
+height:12%;
+left:22.5%;
+top:15%;
+background-image: url('https://i.imgur.com/SV29H9u.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#c1line {
+position:absolute;
+background-color:#6b7f87;
+width:0.5%;
+height:43%;
+left:25.3%;
+top:15%;
+}
+
+#basics {
+position:absolute;
+background-color:#6b7f87;
+padding:1%;
+width:12%;
+height:51%;
+top:40%;
+left:18.5%;
+}
+
+#basicsbox {
+position:absolute;
+background-color:#575656;
+padding:1%;
+overflow:auto;
+width:11%;
+height:49%;
+top:41%;
+left:19%;
+color:#FFFFFF;
+font-size:1.5vh;
+font-family: 'PT Sans Narrow', sans-serif;
+line-height:2.3;
+}
+
+#picbox {
+position:absolute;
+background-color:#6b7f87;
+width:18%;
+height:43%;
+left:41%;
+top:14%;
+}
+
+#pic {
+position:absolute;
+background-color:#424242;
+width:17%;
+height:41%;
+left:41.5%;
+top:15%;
+background-image: url('https://i.imgur.com/80fRqvd.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic:hover {
+background-image: url('https://media.giphy.com/media/mXiCGmjEYC9GsL22wD/giphy.gif') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#line1 {
+position:absolute;
+background-color:#6b7f87;
+width:0.5%;
+height:43%;
+left:36.5%;
+top:14%;
+}
+
+#tabbox1 {
+position:absolute;
+background-color:#6b7f87;
+width:4%;
+height:10%;
+top:14%;
+left:34.75%;
+}
+
+#tabs1 {
+position:absolute;
+background-color:#6B6A6A;
+width:3%;
+height:8%;
+top:15%;
+left:35.25%;
+text-align:center;
+font-size:3vh;
+font-family: 'Amatic SC', cursive;
+color:#FFFFFF;
+line-height:2.5;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox2 {
+position:absolute;
+background-color:#6b7f87;
+width:4%;
+height:10%;
+top:30.5%;
+left:34.75%;
+}
+
+#tabs2 {
+position:absolute;
+background-color:#7F7E7E;
+width:3%;
+height:8%;
+top:31.5%;
+left:35.25%;
+text-align:center;
+font-size:3vh;
+font-family: 'Amatic SC', cursive;
+color:#FFFFFF;
+line-height:2.5;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox3 {
+position:absolute;
+background-color:#6b7f87;
+width:4%;
+height:10%;
+top:47%;
+left:34.75%;
+}
+
+#tabs3 {
+position:absolute;
+background-color:#939292;
+width:3%;
+height:8%;
+top:48%;
+left:35.25%;
+text-align:center;
+font-size:3vh;
+font-family: 'Amatic SC', cursive;
+color:#FFFFFF;
+line-height:2.5;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#line2 {
+position:absolute;
+background-color:#6b7f87;
+width:0.5%;
+height:43%;
+left:63%;
+top:14%;
+}
+
+#tabbox4 {
+position:absolute;
+background-color:#6b7f87;
+width:4%;
+height:10%;
+top:14%;
+left:61.2%;
+}
+
+#tabs4 {
+position:absolute;
+background-color:#6B6A6A;
+width:3%;
+height:8%;
+top:15%;
+left:61.7%;
+text-align:center;
+font-size:3vh;
+font-family: 'Amatic SC', cursive;
+color:#FFFFFF;
+line-height:2.5;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox5 {
+position:absolute;
+background-color:#6b7f87;
+width:4%;
+height:10%;
+top:30.5%;
+left:61.2%;
+}
+
+#tabs5 {
+position:absolute;
+background-color:#7F7E7E;
+width:3%;
+height:8%;
+top:31.5%;
+left:61.7%;
+text-align:center;
+font-size:3vh;
+font-family: 'Amatic SC', cursive;
+color:#FFFFFF;
+line-height:2.5;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox6 {
+position:absolute;
+background-color:#6b7f87;
+width:4%;
+height:10%;
+top:47%;
+left:61.2%;
+}
+
+#tabs6 {
+position:absolute;
+background-color:#939292;
+width:3%;
+height:8%;
+top:48%;
+left:61.7%;
+text-align:center;
+font-size:3vh;
+font-family: 'Amatic SC', cursive;
+color:#FFFFFF;
+line-height:2.5;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabs1:hover,#tabs2:hover,#tabs3:hover,#tabs4:hover,#tabs5:hover,#tabs6:hover {
+background-color:#424242;
+color:#BDCED5;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#content {
+position:absolute;
+background-color:#6b7f87;
+padding:1%;
+width:28.45%;
+height:30%;
+top:61%;
+left:34.75%;
+}
+
+#contentbox {
+position:absolute;
+background-color:#575656;
+padding:1%;
+overflow:auto;
+width:27.45%;
+height:28%;
+top:62%;
+left:35.25%;
+color:#FFFFFF;
+font-size:1.5vh;
+font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#circle2 {
+position:absolute;
+background-color:#6b7f87;
+border-radius:100%;
+width:7%;
+height:14%;
+left:71%;
+top:14%;
+}
+
+#circle2pic {
+position:absolute;
+background-color:#424242;
+border-radius:100%;
+width:6%;
+height:12%;
+left:71.5%;
+top:15%;
+background-image: url('https://i.imgur.com/2Yqs9Nh.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#c2line {
+position:absolute;
+background-color:#6b7f87;
+width:0.5%;
+height:43%;
+left:74.25%;
+top:15%;
+}
+
+#details {
+position:absolute;
+background-color:#6b7f87;
+padding:1%;
+overflow:auto;
+width:12%;
+height:51%;
+top:40%;
+left:67.5%;
+}
+
+#detailsbox {
+position:absolute;
+background-color:#575656;
+padding:1%;
+overflow:auto;
+width:11%;
+height:49%;
+top:41%;
+left:68%;
+color:#FFFFFF;
+font-size:1.5vh;
+font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.tabs {
+display:block;
+width:100%;
+height:100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6 {
+display:none;
+}
+
+h1 {
+color:#BDCED5;
+border-bottom: 2px solid #6b7f87;
+font-size:2vh;
+font-family: 'Raleway', sans-serif;
+letter-spacing:3px;
+text-align:center;
+}
+
+b {
+color:#939292;
+font-family: 'Raleway', sans-serif;
+text-transform:uppercase;
+}
+
+i {
+color:#CCCCCC;
+}
+
+a {
+color:#BDCED5;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+a:hover {
+color:#6b7f87;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+</style>
+
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|PT+Sans+Narrow|Raleway" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('contentbox').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="titleline"></div>
+<div id="titlebox"></div>
+<div id="title">
+The | Ivashkov | Conjurer
+</div>
+
+<div id="c1line"></div>
+<div id="circle1"></div>
+<div id="circle1pic"></div>
+<div id="basics"></div>
+<div id="basicsbox">
+<h1>Basic Information</h1>
+<b>Name:</b> Tanya Ivashkov<br>
+<b>Age:</b> 20 Years Old<br>
+<b>Birthdate:</b> January 18<br>
+<b>Gender:</b> Female<br>
+<b>Sexuality:</b> Demisexual<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> Russian<br>
+<b>Occupation:</b> Student at <a target="_blank" href="www.ulreich.weebly.com">Ulreich University</a><<br>
+<b>Mage Rank:</b> Auror<br>
+<b>Primary Magic:</b> Conjuration<br>	
+<b>Height:</b> 5'6<br>
+<b>Weight:</b> 127 lbs
+</div>
+
+<div id="line1"></div>
+<div id="tabbox1"></div>
+<div id="tabs1">
+<span class="tabs" onClick="changeNavigation ('tab1')">I</span>
+</div>
+<div id="tabbox2"></div>
+<div id="tabs2">
+<span class="tabs" onClick="changeNavigation ('tab2')">II</span>
+</div>
+<div id="tabbox3"></div>
+<div id="tabs3">
+<span class="tabs" onClick="changeNavigation ('tab3')">III</span>
+</div>
+<div id="picbox"></div>
+<div id="pic"></div>
+<div id="line2"></div>
+<div id="tabbox4"></div>
+<div id="tabs4">
+<span class="tabs" onClick="changeNavigation ('tab4')">IV</span>
+</div>
+<div id="tabbox5"></div>
+<div id="tabs5">
+<span class="tabs" onClick="changeNavigation ('tab5')">V</span>
+</div>
+<div id="tabbox6"></div>
+<div id="tabs6">
+<span class="tabs" onClick="changeNavigation ('tab6')">VI</span>
+</div>
+<div id="content"></div>
+<div id="contentbox">
+<h1>History</h1>
+Tanya Ivashkov was born to Adrian and Natasha Ivashkov in Moscow, Russia late one night in the European Medical Center (EMC) on January 18th. The pale blue-eyed girl was their only child, but her mother died during childbirth due to medical complications leaving her with only a resentful father as her ‘family.’ From that point on, for upwards of thirteen years it was just the two of them together. It took her father years to accept Tanya as his child, to forgive her for taking his wife in return for her own life in the world. The absence of a mother in her world left her to grow close to her Aunt Dalina over time, often staying the night at her house in times when her father was drinking. He had never taken his anger out on her before, but fear of that drove her to seek shelter there. 
+<br>
+On an early saturday morning, Tanya was sent out by her Aunt who was currently living there at the time as well as a few of her closer family friends to get groceries for the new years party they would be throwing that very night. Her instructions were clear: get drinks and snacks and return with the change. She did just that, but when she returned to her home the wooden door was kicked in, snow carried on chilling winds blowing straight through. The lights were still on, and she could see small blood stains on the windows. 
+<br>
+Rushing inside, she came to the scene of every single one of her family members laying dead on the floor, their bodies nearly mutilated past recognition as their blood spilled across the wooden flooring. She felt her heart shatter at that very instant, blood roaring through her ears as tears streamed endlessly down her cheeks. She fell to her knees, emitting a piercing wail that woke up the neighbors who reportedly had heard nothing about what had happened to her family. Shockingly enough, no one did. It was if they had simply just died without a sound. Broken and traumatized, she was taken into custody by social services, and with no family to be handed off to she was shoved into an orphanage. 
+<br>
+She spent weeks there, but one day an older married couple entered the orphanage and adopted her, taking her home with her with all of her meager belongings to a small village. The house was small, and quaint, but it smelled and felt like a home. Unknowingly to Tanya, the Russian Mafia often would make rounds throughout the town, taking money as payment for the villager’s lives, and she would have a run-in with them on a simple trip to get some bread from the bakery known for their delicious pastries and breads. That afternoon, while walking to the bakery, she was stopped by a car full of armed mafia demanding payments. She had absolutely no idea what they were talking about, and the only money she had to her name was the money given to her to pay for the bread. She didn’t have any other option, so she gave them all of her measly money and she was left there, right outside the doors of the bakery. 
+<br>
+Having seen this, the shopkeeper pulled her inside. She could tell that this bakery was also the person’s home, most likely run by their own family. The owner offered Tanya whatever she was coming to get, but for free since the mafia had taken her money. They too had been stolen from by them and they resented them for it, however.. They were kindhearted individuals and couldn’t stand to see the girl robbed. She had half a heart to object, seeing as how their income was their shop, but she needed the bread as well. Times were hard, and they needed what they could get. With a bag of bread in hand, Tanya began to exit when a flyer advertising a figure skating competition back in Moscow that was being held. Admissions weren’t expensive, so with a heart full of excitement, the young girl returned to her adopted home and begged to go. 
+<br>
+Surprisingly enough, they agreed to take her, so week later, they set off back to Moscow. It was hard for her to be there after what had happened to her family, but excitement purged her dark thoughts and she managed to watch the show without thinking about it. One skater in particular, a girl named Vika Smirnov, was mentioned to have hailed from the very town she lived in! She felt her heart race, her jaw dropping. Once the show was over, she tugged her adopted parents all the way over to the Skaters’ booth where they could meet the skaters for a brief time. 
+<br>
+Her excitement bubbled out of her like a boiling pot, and she couldn’t contain herself. Vika was a gorgeous woman, and her skating techniques were magnificent. Tanya has no hope of not barraging the woman with her questions. However, Vika took the questions in stride, and the two of them managed to form a quick and small bond over their conversation, and Tanya vowed to go to every single one of her games. 
+<br>
+For three years she kept this promise until Vika Smirnov seemingly vanished off of the face of the Earth. Distrought, she looked everywhere for her, conducting hours upon hours of research. It was one of those days while she was researching that she recieved a letter from a place called ‘Ulreich University.’ She didn’t know what it was, or where, but in her heat she felt that she needed to go. She felt Vika’s presence there like a sharp tug on her soul. That very day, with all of her belongings, Tanya set off to the University. Hopefully there her and Vika could be reunited. 
+<br>
+They had lots of catching up to do after almost two years of not hearing from each other.<br>
+</div>
+
+<div id="c2line"></div>
+<div id="circle2"></div>
+<div id="circle2pic"></div>
+<div id="details"></div>
+<div id="detailsbox">
+<h1>Appearance</h1>
+<br>A pair of baby blue sapphire gems set into porcelain fair flesh, they make up Tanya's striking gaze. Framing said special jewels are locks of ebony, carefully taken care of to seem silky and shiny. Her hair is normally allowed to hang down to her waist, surrounding her hourglass shape and is sometimes styled into a high ponytail. Tanya has slender, arched eyebrows that end into a fine point towards the ends, just enough distance apart to be equally spaced between her eyes and the bridge of her small and slightly upturned nose. Her lips appear as a rosy shade of pink, full and plush with a slightly bigger upper lip. Her overall facial structure is ovular and narrow, her sharp jawline leading up into high, distinguished cheekbones that give her a more European look. She has narrow shoulders and wide hips that contribute to her hourglass shape, long and slender legs accompanying them.
+<br>
+<h1>Personality</h1>
+<br>The Ivashkov girl has very powerful protective instincts, unable to sit back and see people get hurt and will always try to do something to help wherever possible even if for a total stranger. She is extraordinarily devoted to helping innocent people and protecting those she loves. However, she can be very sarcastic and sharp-tongued at times, always having a smart ass comment whenever someone says something antagonistic to her and always bites back with a witty insult. She doesn't hesitate to speak her mind and can be extremely stubborn in her opinions. 
+Despite these things Tanya remains a social creature. She is normally friendly, warm, not shying away from new people, and she has considerable skill in social interactions. She has a certain charisma that attracts people to her and makes them flock to her, but there is a significant difference in this charm: it isn't due to her overall appearance, simply her witty sense of humor and her sharp brilliance.
+<br>
+</div>
+
+<div id="tab1">
+<h1>Inventory</h1>
+<p align="center"><b>Weapons</b><br><p align="left">
+None<br>
+<p align="center"><b>Armor</b><br><p align="left">
+<p align="center"><b>Miscellaneous</b><br><p align="left">
+<b>Secret Santa Spell: Quick Lock</b><br>
+Only able to be cast via direct contact with the ground, the caster may turn a 10x10 square shape of earth within 40 feet of their current position into a quicksand-like substance. If someone were to step onto the quicksand material they would find that it would start actively sucking them into the spell at an immense strength wherever it touches. This spell acts like a trap and attempts to pull and constrict ANY person who falls into it (including the caster) at 3x human strength due to the “sand” acting as tendrils of magic in this sense that are Titanium in strength. With such a high pulling power, this spell is capable of holding onto and submerging a full grown adult human within minutes. If this spell were to be cast immediately underneath a walking person they would have a few seconds to evade before the quicksand will suddenly be created around their ankles, already partly submerging them and making it much easier to pull them below. If the caster pumps more mana into that space they can also harden the quicksand to be as hard as the ground was before, but if the caster were to try this on regular quicksand it would only turn the ground into a weak muddy substance. The quicksand zone lasts for three post rotations and is only able to stay active as long as the caster stays within twenty feet of it. If they were to leave the twenty foot zone then the quicksand would turn into normal sand. If someone is already submerged when the spell ends, they will not have their body be destroyed and can easily break through the earth if strong enough. However, if their head is also beneath the surface then they will die immediately due to being crushed and suffocated by the weight of the earth.<br><br>
+<b>Leather Bracelet</b><br>
+A simple leather strap that can always be found around Tanya's wrists. It has a series of colorful beads on leather strings wrapping around it and a brown Falcon feather can be seen sticking out of the top, secured by a weak tiny metal ring. This was given to her by her Father.
+</div>
+<div id="tab2">
+<h1>High Mage Medium</h1>
+<br><b>Sniper's Rifle</b><br>
+Tanya’s rifle has gotten an upgrade, the average metal that constructed it before now changed to that of a stronger metal alloy equal to Titanium in strength. The rifle itself still holds its previous ability to shoot mana projectile bullets that are equal to titanium in strength and travel at a 1.5x human sprinting speed, as well as the ability to charge up bullets over one rotation to make them one rank stronger than they would be normally (Tungsten).<br>
+<i>Conjuration</i><br>
+•Conjuration projectiles (including bullets shot by her rifle) have their speeds increased by 1.5x with a cap of 3x, meaning that no projectile can exceed triple human sprinting speed. If cast through the rifle or attached to, projectiles (including the beams cast by her Tracker) find their maximum distance increased by fifteen feet.<br>
+•Bullets that are charged with full intention of piercing a barrier have unlocked the ability to act as miniature drills (at the cost of 1.5x more mana than normal). These bullets will attack a barrier at a Titanium level, but will remain for two post rotations regardless of whatever defensive barrier it strikes. Ex. If a Titanium drill bullet hits a Tungsten barrier, it will strike the barrier in post 1 and NOT be destroyed, instead doing continued Titanium damage to the structure on power two unless it is destroyed by a hostile magic of Titanium or Higher. If the bullet is not interrupted, it will tear through Tungsten barrier after post two. After coming in contact with a barrier the bullets have their speed by half.<br>
+<i>Stigmatism</i><br>
+•So long as the rifle is in contact with Tanya’s body somehow, she will find that her Stigmatism auras require slightly less mana to cast and uphold their passive abilities (x0.5), draining less mana over time. This does not affect the Aura’s spells, meaning that just because the passive requires less mana that does not mean that spells have reduced mana costs.<br>
+•Tanya may expend double the mana cost of a spell and coat lesser than Iron spells in it so that their durabilities are raised to Iron regardless of their rank (so a Paige projectile, at double the cost, could become Iron instead of Tin). This will have no effect on projectile spells that are already Iron or Mage rank. The duration of her Stigmatism auras are increased by one post but are unable to affect buffs that exceed three posts in length.<br>
+</div>
+<div id="tab3">
+<h1>Universal Spells</h1>
+<br><b>What is Mana Manipulation?</b><br>
+The most basic class of magic, involving the direct manipulation of Mana, and is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level.<br><br>
+<b>What are Universal Spells?</b><br>
+Universal spells are spells taught by the teachers of Ulreich University that any mage can learn no matter their tree so long as their current rank is high enough to learn it. <br><br>
+<b>Personalized Mana</b><br>
+When mana is being weaved throughout Tanya's body, it takes on the form a light blue flame that coils off from her skin like a fine mist and with no heat, ribbons of royal purple intermixing with the blue like an intricate design. This is more prominent when spells like Show of Power are being used, and on its own it isn't too distracting, the colors more transparent than opaque. However, this aura becomes more opaque when more mana is being used, causing large-scale spells to cover her entire body, making her a beacon of blue and purple heat-less flames. 
+<i><br>---Blue is the color of the sky and sea. It is often associated with depth and stability. It symbolizes trust, loyalty, wisdom, confidence, intelligence, faith, truth, and heaven. The color (light) blue is associated with health, healing, tranquility, understanding, and softness.<br>
+---The color purple is generally associated with royalty and symbolizes power, nobility, luxury, and ambition. It conveys wealth and extravagance. Purple is associated with wisdom, dignity, independence, creativity, mystery, and magic. </i><br><br>
+<p align="center"><b>Universal Spells</b><br><p align="left">
+<b>Mana Weave</b><br>
+The simple act of weaving one's own mana pool through their body. Also known as channeling mana.<br><br>
+<b>Mana Spark</b><br>
+A basic mana projectile that can be used offensively or defensively. It causes no real damage other than a small sting when hit directly in the flesh.<br><br>
+<b>Mana Parry</b><br>
+In a complicated set of movements, the caster must create a solidified pane of mana upon an appendage or object, and swipe it against an incoming projectile. Upon contact, the caster has a split second to match their mana levels with the opposing spells, which causes the projectile to meld with the casters mana and remove all secondary effects from the energy. This causes the spell to fly off in a random direction, reverted to base mana but still powerful enough to do damage based on the rank of the attack. Casters who use this can only do so on spells of their rank and below, and to do so costs the exact same amount of mana as the spell in question, so one should keep this in mind before parrying anything. Projectiles that have special effects such as detonation, or abilities that can be triggered mid flight can be activated before a spell is able to be parried.<br><br>
+<b>Mana Pane</b><br>
+When focusing one's mana before them and swirling it in a vortex quickly and violently, one may allow their mana to harden, causing a thin pane to form. This spell can only be used defensively and the power it can block is minimal, ranking at iron toughness. This spell can be learned by anyone of mage rank and above, but upon reaching high mage, one may cast two of these at a time, one for each hand.
+</div>
+<div id="tab4">
+<h1>Primary Tree; Auror</h1>
+<br><p align="center"><b>Conjuration</b><br><p align="left">
+<i>"Conjuration is the art of summoning objects to one's self for their own use. These objects will return to the storage dimension in which they came from after usage. These objects also may possess a very wide array of special properties, and may even be controlled telepathically by the Conjurer once a certain mastery has been achieved."</i><br><br>
+<b>Rifle</b><br>
+A standard portable long-barreled firearm about four feet in length designed for precision shooting, the Rifle conjuration is capable of shooting singular shots of two inch long bullets which are all (including the rifle itself) cobalt in strength. These bullets travel at 1.5x the average sprinting speed and may pierce through cobalt constructs. Anything higher than that will cause the bullet to simply smash into itself and flatten due to its speed and render it useless. Hitting surfaces below the bullets penetration level will still damage the material to a slight degree. The size of the bullets are very small, meaning breaking through a barrier will only penetrate the barrier in that diameter of size, and not rip the thing apart entirely. The bullet can only KEEP going past the barrier if its a rank above, as being the same rank will destroy that part of the barrier, but also the bullet. There is no need for this weapon to be “reloaded” but about a second must pass between shots, giving it time to charge its energy and fire. If Tanya weaves her mana into a singular bullet for one full post, the bullet will gain strength enough to pierce through up to one rank above her current but will still be unable to fully destroy a barrier. The bullets themselves are bright, glowing mana which can easily be seen and telegraphed. Upon High Mage rank this gun and its bullets scale to titanium in durability. Overall, the bullets can travel to a maximum distance of 70 feet.<br><br>
+<b>Red-Light Tracker</b><br>
+Able to be attached to the sides of the barrel of her Rifle, the trackers release a thin red beam of light like a laser pointer, each beam at an inverted angle to coalesce on a single point in the distance. This tracker will show the potential path of the bullets from her Rifle, the singular dot at the end of the foot long beams signifying where it would hit at a maximum range of 30 feet. The tracker is activated by a continuous stream of mana from her body, draining a small amount of mana once per post but makes the rifle shots far more accurate specifically on still targets. I.E. If a shot was intended to put a hole through a wall, doing so from 30 feet without the tracker would be iffy, but with the tracker the bullet will hit whatever the dot touches. The attachment itself is iron, scaling to cobalt by expert. If the tracker is destroyed it will not change the accuracy of any bullets already fired prior to its destruction. As long as the red dot remains on the target for a handful of seconds, the next projectile cast may track this being for the first 20 feet of its 30 maximum range. The speed at which the projectile tracks is rather slow, and can be outwitted by a fast individual assuming they have time to react. If the projectile passes a 20 foot range, the tracking will cease, causing it to continue flying in the same direction it was last heading towards. If the projectile in question has a smaller range than 20 feet, it will simply disperse upon passing that limit. <br><br>
+<b>Cushion Boots</b><br>
+A pair of leather boots reinforced with iron around the soles and the toes. Underneath the iron platings beneath the soles are lightweight airy cushions that expand when no pressure is current so that air can fill the tiny holes within and make a cushion of sorts. When pressure by the body weight is applied the cushions sink in a way that allow for quite a large amount of force to be applied to them before actually damaging the body from falls. I.E. 20 feet of falling would warrant no damage assuming she lands perfectly on her feet, but landing haphazardly (due to rushing, or being knocked down) will not trigger these boots at all. If mana is weaved into the boots prior to fall (cannot be done while falling) the limit in which she can fall without injury is 25 feet. At the cost of more mana, the air particles which move inside the boots while falling can be released in a blast of air pressure. This blast occurs around the bottom of the boots and can only shoot Tanya as far as she fell, so if she fell 25 feet in total, she’d fly forwards 25 feet in the direction she aimed her body. The blast of pressure will only damage up to iron assuming she has fallen at least 20 feet. With a little bit of extra mana being woven into the boots for however long this buff is needed, Tanya receives a 2x increase to her speed. This speed scales to 3x at High Mage.<br><br>
+<b>Grappling Hook</b><br>
+A small metal attachment that wraps around Tanya’s forearm and is secured by metal clasps. When activated by feeding mana into it, the iron-grade attachment shoots out a long cable of equal durability at a sprinting speed in a straight line. This cable is capable of extending thirty feet and at the end of the line are three iron-grade claws that dig into whatever they hit so long as it is equal to or less than iron in strength to secure it in place. By feeding more mana into the cable itself it will begin to retract, capable of pulling an average-sized human towards the point of impact at the speed of which someone could overhand throw a decently weighted object. More weight can be pulled by the cable so long as it does not exceed 1.5x Tanya’s own weight. If this weight is passed then the cable will snap and will require to be reconjured before being able to be used again. Even without too much weight the cable can easily be broken by an attack of iron strength just as the metal forearm attachment can be.<br><br>
+<b>Refractive Barrier</b><br>
+A cobalt-grade circular shield big enough to cover the mid-section of an average-sized person constructed of a highly reflective metal which may defend against a spell of equal ranking but will be destroyed. When destroyed the barrier may simply be reconjured. If mana is actively being weaved into this barrier it may absorb one spell at least one rank below the rank of the shield and store the energy on its surface. After absorbing the spell, she may fire off a kinetic blast within three posts of catching it and the projectile will travel for 15 feet in a straight line through the front of the shield, and will ALWAYS be the same rank as the shield itself (for example, if she is expert mage and she absorbs a paige spell, she can still fire off an expert mage blast of kinetic force). For every rank higher her counter attack is in comparison to the attack she absorbed, she must expend more mana to power it up. If she defends against a beginner mage attack at mage, she will only have to pay a little mana to fire off a mage counter attack, but if a paige spell is absorbed she’ll have to pay more mana before firing it off. Once the projectile is fired it goes on a three post cool down before being able to be used again.
+<br><br><b>Incendiary Rounds</b><br>
+A small magazine conjuration that can be attached to her Rifle which adds an additional amplified amount of mana to be cycled through the gun during its firing process, when mana is weaved into the magazine while a bullet is being created, it is then charged with a highly explosive film of gaseous mana that reacts violently when coming into contact with solid structures. This makes a chain reaction in the mana which causes it to explode outwards in an omnidirectional 5 foot area around the impact of deadly flames, which can instantly destroy cobalt (scaling up to Titanium at High Mage) within 2.5 feet of the impact point. Anything more than that will only destroy iron constructs, scaling to steel at High Mage. In order to be conjured, Tanya must have enough remaining mana to fire off eight individual shots which means that the cost of the eight shots is taken from her mana pool upon conjuration and that only eight amplified shots can be fired which require a second between shot to contain the extra explosive property. These new bullets have a maximum range of thirty feet, and are slightly bigger and move slower than her regular rifle bullets, making them easier to spot and dodge. Although the flames are not pyromancy, they will affect those who are weak to general flames. Five seconds must pass after depleting a Magazine to conjure another, which applies to any additional ammunition spells created in the future.<br>
+</div>
+<div id="tab5">
+<h1>Secondary Tree; Mage</h1>
+<br><p align="center"><b>Stigmatism</b><br><p align="left">
+<i>Stigmatism is the art of creating Auras around your body based on spirits that you form a close connection to. Stigmatism auras are generally related to an animal, and take on its properties (for example, a Hawk aura would grant increased vision, and faster movement), but they can take on the form of legendary human spirits as well. Each spirit that you use to create an aura from must be attached to the physical world via items that the mage holds on their person." </i><br><br>
+<b>Falcon Aura</b><br>
+An aura that is able to be activated through a small bracelet owned by Tanya with a small feather of a Red-footed Falcon, a native bird from her homeland. This bracelet is constructed of a simple thick tin-grade leather strap wrapping around the wrist with several beads and a dark grey feather laced into the leather through a series of threads woven into the feather’s barb. Falcon’s aura wraps around Tanya’s back, manifesting itself as a solid pair of ethereal blue wings with a wingspan of ten feet and fluctuates in brightness depending on how much mana is weaved into the aura. The aura itself grants the following effects:<br>
+<i>Flight</i>: When activated, the wings formed are capable of providing Tanya with a basic gliding ability. These wings may carry Tanya at the speed of which a base human can run as a simple glide but can not exceed this speed. She may activate this gliding ability so long as she stays within fifteen feet of the nearest platform capable of holding her. This means that if she falls from fifty feet, the wings will not work until she hits the ten foot mark. Upon achieving Mage rank, Tanya unlocked the ability of basic flight which allows her to fly comfortably at 1.5x human speed at a maximum height of fifteen feet. By weaving double the amount of mana it takes to activate the aura, Tanya can receive a short burst of speed equal to 3x human speed (with the cap itself being 3x) that lasts for one post but goes on a one post cool down timer after being used. <br>
+<i>Feather Barrage</i>: By weaving mana into one of the aura’s ethereal feathers -- at a maximum of four at a time they will shoot out as projectiles that travel at a base human sprinting speed, covered in an Iron-durability outer shell of mana that hugs the feather’s form and causes it to glow a dull purple shade with a light blue core. Upon coming into contact with a solid object the outer shell will be capable of breaking through objects of Iron durability but will also consume the feather and cause it to disappear. If all four feathers hit the same construct, they may destroy (but not individually pierce through) one Steel construct. These feathers may travel at a maximum distance of twenty feet and may be shot in a straight line. Their path may be altered slightly to veer in any one direction so long as they stay within the twenty foot radius, but can not make abrupt or sharp turns.<br>
+<i>Winged Defense</i>: Wrapping the wings around herself like a shield, these wings may have mana weaved into their entire form to completely cover it in an Iron-grade outer shell, effectively blocking up to one magical or physical attack of mage ranking, anything higher than that simply cracking through the defenses with ease. This ability goes on a one rotation cooldown after being used. If Tanya surrounds her body with her wings for one full rotation, any minor wounds will begin to numb as if she had taken effective pain medication but will act instantly rather than over time. This only numbs passive pain (including things like cracked and fractured bones except not broken ones) which means that any external pressure on the wounds will still cause her to feel appropriate pain based on severity. <br>
+<i>Falcon Eye</i>: Weaving her Aura into her eye allows her to see through one minor paige-ranking deception as well as tripling her farsight for a maximum duration of two posts which allows her to see details clearer from a greater distance (3.5x base human distance capability cap.). While this ability is active light-based spells and bright flashes are three times as effective on her which also triples the range at which flashes of light can affect her. Allows zoom-vision to see details three times further than the average human can, like magic binoculars, upper limit cap of x3.5 to this buff. This does not account for things intentionally hidden by magical or nonmagical means unless clearly specified in the method of concealment that there are details that would be obvious if someone were to examine them up close. Falcon Eye now gives Tanya the ability to see in Thermal Vision if she so chooses to, but one post must be spent shifting between normal vision and thermal vision. Thermal vision itself will drain a meager amount of mana per post of usage and has no definite cast time. Thermal vision can see through cloaking and concealment spells of equal or lesser rank, assuming thermal is applicable to the situation in the first place. The detection that can pass through equal or lesser ranked spells is something that can be turned on or off. If not in use the mana cost is small, and Tanya is limited to seeing only base mundane/nonmagic things that thermal vision is applicable to. The mana cost increases considerably if she is attempting to have a look through cloaking.<br>
+<i>Pinwheel</i>: This ability is only able to be used if four feathers are actively within Tanya’s range of control. So long as she is looking at all four of her feathers she can call them back to any spot in her frontal vision within ten feet at a jogging speed and cause them to gather with barbs to barbs. Expending double the amount of mana it costs to cast the feathers she can double their size and cause them to begin spinning in a circular motion. This will create a two foot wide barrier of mana-hardened feathers to form that can block up to one attack of equal strength before breaking. The feathers will travel the most logical route to the area of desire, but can easily be stopped by sufficiently ranked obstacles or forces that are equal to or greater than 2x human strength. Since only four feathers can be formed at any one time, only one Pinwheel can be summoned at a time.<br>
+<i>Frostbite</i>: If Tanya weaves mana into any of her feathers before sending them off as projectiles she may coat them in a sheen of mana that is incredibly cold. Aside from that it does not affect the feather in any way, but upon physical contact the feather will lose its hard piercing shell and spread a thin layer of ice equal to Iron in strength over the area/section of the body hit (can’t encompass the entire body, but if someone got hit in the knee then their whole knee would freeze over front and back, etc.) The longer the ice stays on them the worse hypothermia they will get as a result. Should it manage to remain active for four whole rotations their afflicted area will become completely uselessly numb, not paralyzed but thoroughly frozen beyond control. This of course can be blocked by armors of equal or greater rank, but it can’t be blocked by clothing or lack of soft skin--unless base skin racials exceeds that of Iron. The true power of this lies in the feather’s ability to take off an additional x.05 speed off whatever the target’s current physical movement speed rating is, with a possible total decrease of x2 speed if all four feathers with this ability hit their mark.  Each individual case of speed debuff specifically has its own countdown, they can last no longer than two rotations on their own, but have no cooldown.<br>
+</div>
+<div id="tab6">
+<h1>Tertiary Tree; Paige</h1>
+</div>
